@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Area
+{
+  public static void main (String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Welcome! What shape's area do you need to calculate today?");
+    String shape = scan.nextLine();
+    
+    System.out.println("Thank you! Please enter the desired shape's dimensions.");
+    
+      int a = scan.nextInt();
+      int b = scan.nextInt();
+      
+    Comp compObject = new Comp();
+    compObect.Calculate(shape, a, b);
+   }
+  }
+    
+    public class Comp
+    {
+      public void Calculate (String shape, int a, int b)
+      {
+        if (shape.equalsIgnoreCase("Triangle"))
+        {
+          int area = .5*a*b;
+          System.out.println("The area of the " + shape + " whose dimensions you inputed is " + area.");
+        }
+        
+        else if (shape.equalsIgnoreCase("Rectangle"))
+        {
+          int area = a*b;
+          System.out.println("The area of the " + shape + " whose dimensions you inputed is " + area.");
+        
+        else if (shape.equalsIgnoreCase("Square"))
+        {
+          int area = Math.pow(a,2);
+          System.out.println("The area of the " + shape + " whose dimensions you inputed is " + area.");
+        }
+    }
+  }
