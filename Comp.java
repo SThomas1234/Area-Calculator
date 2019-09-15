@@ -12,22 +12,6 @@ public class Comp
   }
   
   
-  public void CalculateCircle(String shape, int radius) {
-		double area = (double)(pi*Math.pow(radius, 2));
-		PrintArea(area, shape);
-		
-	}
-  
-  
-  public void CalculateTrapezoid(String shape, int base2, int height, int base1) {
-	  double part1 = base1 + base2;
-	  double part2 = (part1)/2;
-	  double area = part2*height;
-	  
-	  PrintArea(area, shape);
-	  
-  }
-  
   public void Calculate (String shape, int a, int b){
     if (shape.equalsIgnoreCase("Triangle"))
     {
