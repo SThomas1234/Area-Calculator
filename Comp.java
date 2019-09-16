@@ -1,4 +1,3 @@
-package area;
 
 public class Comp
 {
@@ -11,6 +10,22 @@ public class Comp
 	  System.out.println("Area of " + shape + ": " + roundedArea);
   }
   
+
+	public void CalculateCircle(String shape, double radius) {
+		double area = pi*Math.pow(radius, 2);
+		
+		PrintArea(area, shape);
+		
+	}
+	
+	
+	public void CalculateTrapezoid(String shape, double base1, double base2, double height) {
+		double part1 = (base1 + base2)/2;
+		double area = (double)(part1*height);
+		
+		PrintArea(area,shape);
+		
+	}
   
   public void Calculate (String shape, int a, int b){
     if (shape.equalsIgnoreCase("Triangle"))
@@ -88,8 +103,8 @@ public class Comp
 		  
 		  PrintArea(area, shape);
 	  }
-	  
 
   }
+
 
 }
