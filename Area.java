@@ -5,8 +5,7 @@ public class Area
   public static void main (String[] args)
   {
     Scanner scan = new Scanner(System.in);
-    
-    // change all inputs to doubles
+   
     // create functionality to allow users to calculate the area of more than one shape (while loop?)
     
     String [] standardShapes = {"triangle", "square", "rectangle", "ellipse", "rhombus", "kite"};
